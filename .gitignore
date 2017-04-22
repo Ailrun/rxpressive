@@ -1,0 +1,8 @@
+# node
+/node_modules
+
+# flow
+/flow-typed
+
+# Editor
+*~
