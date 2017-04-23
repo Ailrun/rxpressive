@@ -40,8 +40,8 @@ For ES5 or lesser version user
 var rxpressive = require('rxpressive');
 var app = rxpressive();
 
-app.get('/').subscribe(function(rxpress) {
-  rxpress.res.send('Hello World!');
+app.get('/').subscribe(function(rxpressive) {
+  rxpressive.res.send('Hello World!');
 });
 
 app.listen(3000).subscribe(() => {});

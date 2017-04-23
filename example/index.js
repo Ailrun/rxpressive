@@ -1,6 +1,6 @@
 /* @flow */
-const rxpress = require('../');
-const app = rxpress();
+const rxpressive = require('../');
+const app = rxpressive();
 
 const appSubscribe = app.listen(3000)
       .subscribe(function() {
@@ -8,6 +8,6 @@ const appSubscribe = app.listen(3000)
       });
 
 app.get('/')
-  .subscribe(function({req, res, next}) {
-    res.send('hello world!');
+  .subscribe(function(rxpressive) {
+    rxpressive.res.send('hello world!');
   });
