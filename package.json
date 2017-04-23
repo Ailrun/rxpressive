@@ -1,9 +1,9 @@
 {
   "name": "rxpressive",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Express meets RxJS",
   "main": "index.js",
-  "repository": "https://github.com/ailrun/REXpress",
+  "repository": "https://github.com/ailrun/rxpressive",
   "author": "Junyoung Clare Jang",
   "license": "MIT",
   "dependencies": {

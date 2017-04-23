@@ -13,6 +13,8 @@ $ npm install rxpressive
 
 ## Warning
 
+**THIS PACKAGE IS NOW UNDER DEVELOPMENT. APIs may not completed or unstable.**
+
 Basically, this framework uses server framework [Express][Express] and reactive library [RxJS][RxJS]. If you are not familiar with those framework/library, I recommand you to read documents about them first.
 
 ## Example
