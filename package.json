@@ -13,6 +13,7 @@
   "files": [
     "LICENSE",
     "README.md",
+    "Update.md",
     "index.js",
     "lib/"
   ],
