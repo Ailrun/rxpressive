@@ -22,17 +22,12 @@ app.post('/').subscribe(function(rxpressive) {
   var body/*: any*/ = rxpressive.req.body;
   var send = rxpressive.res.send.bind(rxpressive.res);
 
-  console.log(rxpressive.req.header);
-
   if (body.counter != undefined) {
     counter = Number(body.counter);
 
-    console.log('try send');
     send({result: true});
   }
   else {
-    console.log('try not send');
-
     send({result: false});
   }
 });
