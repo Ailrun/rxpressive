@@ -44,5 +44,37 @@ app.get('/').subscribe(function(rxpressive) {
   rxpressive.res.send('Hello World!');
 });
 
-app.listen(3000).subscribe(() => {});
+app.listen(3000).subscribe(function () {});
 ```
+
+## Available APIs
+
+- All http verbs supported by express. There are few examples on following.
+  - GET
+
+  ``` javascript
+  var rxpressive = require('rxpressive');
+  var app = rxpressive();
+
+  app.get('/').subscribe(function(rxpressive) {
+    rxpressive.res.send('Hello World!');
+  });
+
+  app.listen(3000).subscribe(() => {});
+  ```
+
+  - POST with application/x-www-form-urlencoded data
+
+  ``` javascript
+  var rxpressive = require('rxpressive');
+  var bodyParser = require('body-parser');
+  var app = rxpressive();
+
+  app.use(bodyParser..urlencoded({ extended: false }))
+    .subscribe(function(rxpressive) { rxpressive.next(); });
+
+  app.post('/').subscribe(function(rxpressive) {
+    console.log(rxpressive.req.body);
+    rxpressive.res.send('posted');
+  });
+  ```
