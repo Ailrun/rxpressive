@@ -70,7 +70,7 @@ app.listen(3000).subscribe(function () {});
   var bodyParser = require('body-parser');
   var app = rxpressive();
 
-  app.use(bodyParser..urlencoded({ extended: false }))
+  app.use(bodyParser.urlencoded({ extended: false }))
     .subscribe(function(rxpressive) { rxpressive.next(); });
 
   app.post('/').subscribe(function(rxpressive) {
